@@ -1,0 +1,27 @@
+{
+    "name": "codetest01",
+    "homepage": "https://github.com/giovannihr/CodeTest01",
+    "description": "origin test project",
+    "main": "gulpfile.js",
+    "authors": [
+        "Giovanni Balarezo balarezogb@gmail.com"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "bootstrap": "^3.3.7"
+    },
+    "overrides": {
+        "bootstrap": {
+            "main": [
+                "dist/css/bootstrap.css"
+            ]
+        }
+    }
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Code Test 01</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/app/styles/styles.css">
+    <!-- endinject -->
+</head>
+
+<body>
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">CT01</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#top">Tasks</a></li>
+                    <li><a href="#questions">Angular JS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="container text-center " id="top">
+            <h1>Code Test 01</h1>
+            <p>Created by "Giovanni Balarezo"...</p>
+        </div>
+    </div>
+    <div class="container-fluid bg-1 text-center">
+        <h3>Code Tasks</h3>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <button id="task1" class="btn btn-primary">Get current Day and Time!</button>
+                <p id="task1-Output"></p>
+            </div>
+            <div class="col-sm-4">
+                <button id="task2" class="btn btn-primary">Scroll a string!</button>
+                <p id="task2-Output"></p>
+            </div>
+            <div class="col-sm-4">
+                <button id="task3" class="btn btn-primary">Sort an Array and Console Log the result!</button>
+                <p id="task3-Output"></p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid bg-1 text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <button id="task4" class="btn btn-primary">Make the first letter of each element bold!</button>
+                <p>Beach Towel</p>
+                <p>Suntan Lotion</p>
+                <p>Mask, Fins and Snorkel</p>
+                <p>Boogie Board</p>
+            </div>
+            <div class="col-sm-4">
+                <p id="task5">Click or Double Click to append a paragraph!</p>
+                <div id="task5Div">
+                    <p id="task5Click">Click Me!</p>
+                </div>
+                <button id="clear" class="btn btn-primary">Clear</button>
+            </div>
+            <div class="col-sm-4">
+                <div style="background-color:red">
+                    <p>Click the button to change the background color of this paragraph.</p>
+                    <button id="task6" class="btn btn-primary">Change Color</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid bg-3 text-center" id="questions">
+        <h3>Angular Basics</h3>
+        <br>
+        <div class="row">
+            <div class="col-sm-12">
+                Bootstrap Accordions
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">1. How do you define an AngularJS application?</a>
+        </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="panel-body">An AngularJS application is created in a module. Inside that module are the different parts that make the application - controllers, services, filters, directives, etc. To designate the root element of that application you use the Angular directive 'ngApp', and place it near the root element of the page. The 'ngApp' directive will auto-bootstrap an AngularJS application</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">2. What is a controller?</a>
+        </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">A controller is an Object that lives inside the application and containes properties and functions that help control the flow of data in an application. Any controller can be attached to the DOM by using the 'ng-controller' directive; this directive will instantiate a new Controller object and create a new child scope that can be injected into the Controller constructor function using '$scope'</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">3. What does ng-model do?</a>
+        </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">The 'ng-model' directive binds the View into the Model. For example, it can be used to bind HTML form elements to a property on the scope. If the property does not already exist then it will be created.</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">4. What is interpolation markup?</a>
+        </h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse ">
+                    <div class="panel-body">Interpolation markup is part of AngularJS syntax. In AngularJS interpolation markup is used along with embedded expressions to provide data-binded to text nodes or attribute values. Interpolation markup is defined by the used of four curly braces, '{{}}'. AngularJS expressions are embedded inside these, i.e. '{{ Type in an expression }}'.</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">5. What is $scope?</a>
+        </h4>
+                </div>
+                <div id="collapse5" class="panel-collapse collapse ">
+                    <div class="panel-body">$scope is an object that is used by the View to access the functions and properties of a specific controller. Only methods defined in the $scope object are accesible from the View.</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">6. What is dependency injection?</a>
+        </h4>
+                </div>
+                <div id="collapse6" class="panel-collapse collapse ">
+                    <div class="panel-body">Dependency injection(DI) is a software pattern in order for components to get access to their needed dependencies. It basically provides an object with the dependencies(objects) it needs instead of having it construct them itself.</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">7. What is two-way binding?</a>
+        </h4>
+                </div>
+                <div id="collapse7" class="panel-collapse collapse ">
+                    <div class="panel-body">Two-way data binding means that a property from the Model is bind to a HTML element in the View; when one of them is updated so will the other one. Data-binding is created using the 'ng-model' directive; it allows for a property in the Model to be changed directly from the View, and vice-versa.</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">8. What is 'controller as' syntax?</a>
+        </h4>
+                </div>
+                <div id="collapse8" class="panel-collapse collapse ">
+                    <div class="panel-body">'Controller as' syntax allows us to define a named scope for a controller with the 'ng-controller' directive. With this new syntax we can define a property or method of a controller using 'this' instead of manipulation the $scope object at all. Using $scope along with nested controllers would create scope bleed; for that reason, 'Controller as' syntax is much clear in specifying the scope of each nested controller.</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">9. What is MV* architecture?</a>
+        </h4>
+                </div>
+                <div id="collapse9" class="panel-collapse collapse ">
+                    <div class="panel-body">MV* refers to a Model-View-Wildcard design pattern. Some examples are, Model-View-Controller, Model-View-ViewModel, Model-View-Presenter,etc. These frameworks are great for solving certain problems, for example: Routing, Data-binding, Templates, Models, Data-access, etc.</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">10. What is the difference between a service and a factory?</a>
+        </h4>
+                </div>
+                <div id="collapse10" class="panel-collapse collapse ">
+                    <div class="panel-body">Using a Factory gives much more power and flexibility, whereareas a Service is simply the "end result" of a Factory call. A Service is just a constructor, it's called with 'new', on the other hand a Factory is just a function that returns a value.</div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <footer class="container-fluid text-center">
+        <p>Created by Giovanni Balarezo</p>
+    </footer>
+    <!-- inject:js -->
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/app/js/index.js"></script>
+    <!-- endinject -->
+</body>
+
+</html>
